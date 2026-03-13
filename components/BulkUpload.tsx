@@ -20,7 +20,7 @@ interface BulkUploadProps {
   goalData: {
     goal: string;
     context: string;
-    senderRole: string;
+    senderRole?: string;
     senderCompany: string;
     relationship: string;
     tone: string;
