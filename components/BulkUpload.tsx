@@ -21,7 +21,7 @@ interface BulkUploadProps {
     goal: string;
     context: string;
     senderRole?: string;
-    senderCompany: string;
+    senderCompany?: string;
     relationship: string;
     tone: string;
   };
