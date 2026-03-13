@@ -103,7 +103,7 @@ export default function HomeClient() {
               <div className="space-y-2">
                 <label className="text-sm font-medium">Upload Spreadsheet</label>
                 <p className="text-xs text-zinc-400">Excel (.xlsx) or CSV with a column containing LinkedIn profile URLs</p>
-                <BulkUpload goalData={goalData} />
+                <BulkUpload goalData={{ ...goalData, senderRole: goalData.senderRole ?? "", senderCompany: goalData.senderCompany ?? "" }} />
               </div>
             </>
           )}
